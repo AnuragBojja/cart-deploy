@@ -25,9 +25,9 @@ def configMap = [
     project: "roboshop",
     component: "cart",
     aws_region: "us-east-1"
-    appVersion: params.APP_VERSION,
-    environment: params.ENVIRONMENT,
-    deploy: params.DEPLOY
+    appVersion: (params.APP_VERSION),
+    environment: (params.ENVIRONMENT),
+    deploy: (params.DEPLOY)
 ]
 
 EKSDeploy(configMap)
