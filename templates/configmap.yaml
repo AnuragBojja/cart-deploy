@@ -10,4 +10,4 @@ metadata:
 data:
     REDIS_HOST: {{ .Values.configmap.redisHost }}
     CATALOGUE_HOST: {{ .Values.configmap.catalogueHost }}
-    CATALOGUE_PORT: {{ .Values.configmap.cataloguePort }}
+    CATALOGUE_PORT: {{ .Values.configmap.cataloguePort | quote }}
