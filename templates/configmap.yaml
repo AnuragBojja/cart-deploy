@@ -8,6 +8,6 @@ metadata:
         tier: backend
         service: cart
 data:
-    REDIS_HOST: {{ .Values.configmap.redisHost }}
-    CATALOGUE_HOST: {{ .Values.configmap.catalogueHost }}
+    REDIS_HOST: {{ .Values.configmap.redisHost | quote }}
+    CATALOGUE_HOST: {{ .Values.configmap.catalogueHost | quote }}
     CATALOGUE_PORT: {{ .Values.configmap.cataloguePort | quote }}
